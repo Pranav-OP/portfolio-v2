@@ -8,15 +8,5 @@
     "demo": "",
     "source": "https://github.com/Pranav-OP/Financial-Document-Analyzer",
     "year": "2025"
-  },
-  {
-    "title": "Portfolio Website",
-    "featured": true,
-    "description": "This site's predecessor - a responsive, clean portfolio built with React + Vite using JSON-based dynamic rendering instead of hard-coded markup. Deployed on Netlify with optimised build settings.",
-    "image": "/assets/portfolio.png",
-    "stack": ["React", "Vite", "JavaScript", "Netlify"],
-    "demo": "https://pranavjcv.netlify.app/",
-    "source": "https://github.com/Pranav-OP/portfolio-website",
-    "year": "2025"
   }
 ]

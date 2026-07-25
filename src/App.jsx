@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import nav from "./data/navigation.json";
 import { useActiveSection } from "./hooks/useActiveSection";
 import Background from "./components/ui/Background";
+import TimeMachine from "./components/ui/TimeMachine";
 import Sidebar from "./components/layout/Sidebar";
 import MobileNav from "./components/layout/MobileNav";
 import About from "./components/sections/About";
@@ -26,6 +27,7 @@ export default function App() {
       </a>
 
       <MobileNav active={active} />
+      <TimeMachine />
 
       <div className="mx-auto min-h-screen max-w-6xl px-6 pt-20 sm:px-10 lg:px-16 lg:pt-0">
         <div className="lg:flex lg:justify-between lg:gap-10">

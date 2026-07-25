@@ -143,6 +143,60 @@
   .animate-blob-b {
     animation: blob-b 26s ease-in-out infinite;
   }
+  .animate-orbit {
+    animation: orbit 12s linear infinite;
+  }
+  .group:hover .animate-orbit {
+    animation-duration: 5s;
+  }
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   "Portal to Tomorrow" orb — 5 hue-rotating, screen-blended blobs that swirl
+   into a rainbow ring with a bright white centre.
+   Adapted from the CodePen by @jasesmith (Portal to Tomorrow).
+--------------------------------------------------------------------------- */
+.portal-orb {
+  position: relative;
+  width: min(62vmin, 30rem);
+  height: min(62vmin, 30rem);
+}
+
+.portal-orb .portal-blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: min(20vmin, 9.6rem);
+  width: 3em;
+  height: 3em;
+  border-radius: 90% 95% 85% 105%;
+  background: #0f0;
+  mix-blend-mode: screen;
+  filter: hue-rotate(0deg);
+  box-shadow: 0 0 0.5em 0.2em #000 inset, 0 0 0.15em 0 #fff;
+  transform: translate(var(--x, -50%), var(--y, -50%)) rotate(0deg);
+  animation: portal-wobble calc(150ms * var(--t)) linear infinite;
+}
+
+/* Negative delays offset each blob's hue phase so the orb is a full spectrum
+   immediately on open, rather than starting clustered on one colour. */
+.portal-orb .portal-blob:nth-child(1) { --x: -53%; --y: -53%; --t: 37; animation-delay: 0ms; }
+.portal-orb .portal-blob:nth-child(2) { --x: -47%; --y: -52%; --t: 58; animation-delay: -1740ms; }
+.portal-orb .portal-blob:nth-child(3) { --x: -45%; --y: -50%; --t: 46; animation-delay: -2760ms; }
+.portal-orb .portal-blob:nth-child(4) { --x: -53%; --y: -45%; --t: 72; animation-delay: -6480ms; }
+.portal-orb .portal-blob:nth-child(5) { --x: -55%; --y: -45%; --t: 62; animation-delay: -7440ms; }
+
+@keyframes portal-wobble {
+  to {
+    filter: hue-rotate(360deg);
+    transform: translate(var(--x), var(--y)) rotate(360deg);
+  }
 }
 
 @keyframes blob-a {

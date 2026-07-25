@@ -10,6 +10,15 @@
   "resumeUrl": "/Pranav_Jagtap_Resume.pdf",
   "cvUrl": "/Pranav_Jagtap_CV.pdf",
   "photo": "/assets/profile.png",
+  "previousSites": [
+    {
+      "label": "Portfolio v1",
+      "host": "pranavjcv.netlify.app",
+      "url": "https://pranavjcv.netlify.app/",
+      "year": "2025",
+      "thumbnail": "/assets/portfolio.png"
+    }
+  ],
   "intro": [
     "I'm a Full-Stack AI Engineer with 2.5+ years of experience delivering scalable backend systems and GenAI applications using .NET Core, FastAPI, and LLM integrations. I've owned features end-to-end, from prototype to production, across microservices architecture and multi-region platform design.",
     "Currently at Avalpha Technologies, I architect monolith & microservices-based backends, ship AI-powered product features, and collaborate directly with the CTO on architectural decisions at a startup scale. Before that, I spent two years at Prismatic Softwares building industrial software across manufacturing, healthcare, and construction domains.",

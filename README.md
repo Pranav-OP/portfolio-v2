@@ -13,7 +13,7 @@ Design language: deep, calm surfaces with a single teal accent, a mouse-follow s
 - **Minimal, interactive animations** — scroll-reveal, staggered lists, active-section nav highlighting, hover lifts, mouse spotlight. All respect `prefers-reduced-motion`.
 - **Accessible** — semantic landmarks, skip link, focus-visible rings, ARIA labels, keyboard-friendly.
 - **SEO / social ready** — title, description, Open Graph, and Twitter card meta tags.
-- **Deploy-ready** — `netlify.toml` and `vercel.json` included with SPA fallbacks.
+- **"Go back in time" portal** — a rotating spaceship badge (fixed bottom-right on desktop; revealed at the foot of the page on mobile) opens a full-screen animated "Portal to Tomorrow" that links to previous versions of the site. Driven by `previousSites` in `profile.json`.
 
 ## 🛠 Tech Stack
 
@@ -63,9 +63,10 @@ portfolio_react_2/
 │   ├── index.css               # Tailwind import, theme tokens, base styles, keyframes
 │   │
 │   ├── data/                   # ⭐ ALL CONTENT LIVES HERE — edit these to update the site
-│   │   ├── profile.json        # name, role, intro, stats, résumé/CV paths
+│   │   ├── profile.json        # name, role, intro, stats, résumé/CV paths, previous sites
 │   │   ├── socials.json        # social links + handles
 │   │   ├── navigation.json     # section order + nav labels
+│   │   ├── greetings.json      # rotating multilingual greetings in the header
 │   │   ├── experience.json     # work history
 │   │   ├── projects.json       # project cards
 │   │   ├── skills.json         # skills grouped by category
@@ -89,13 +90,15 @@ portfolio_react_2/
 │       │   ├── Background.jsx      # grid + glows + mouse spotlight
 │       │   ├── Reveal.jsx          # scroll-reveal wrapper
 │       │   ├── SectionHeading.jsx  # numbered section titles
-│       │   └── ThemeToggle.jsx     # animated sun/moon button
+│       │   ├── ThemeToggle.jsx     # animated sun/moon button
+│       │   ├── Greeting.jsx        # rotating multilingual greeting
+│       │   └── TimeMachine.jsx     # ⭐ rocket badge + "Portal to Tomorrow" overlay
 │       └── sections/
 │           ├── About.jsx
 │           ├── Experience.jsx
-│           ├── Projects.jsx
-│           ├── Lab.jsx          # ⭐ renders the monthly timeline
 │           ├── Skills.jsx
+│           ├── Lab.jsx          # ⭐ renders the monthly timeline
+│           ├── Projects.jsx
 │           └── Contact.jsx
 │
 ├── index.html                  # HTML shell + meta tags + anti-flash theme script
@@ -111,10 +114,12 @@ portfolio_react_2/
 All content is in `src/data/*.json`. No component edits needed for routine updates.
 
 - **Intro, stats, résumé/CV** → `profile.json`
-- **Jobs** → `experience.json` (newest first)
+- **Jobs** → `experience.json` (newest first). Add an optional `link: { label, url }` to a role to show a live-product link under its summary.
 - **Projects** → `projects.json` (set `"image": ""` to fall back to an icon tile; put images in `public/assets/`)
 - **Skills** → `skills.json` (grouped by `category`)
 - **Social links** → `socials.json`
+- **Header greetings** → `greetings.json` (rotates through the list)
+- **Previous site versions** (the "go back in time" portal) → `previousSites` in `profile.json`. Each entry: `{ label, host, url, year, thumbnail }`; add thumbnails to `public/assets/`.
 
 To swap the résumé/CV, replace the PDFs in `public/` (keep the filenames, or update the paths in `profile.json`).
 
@@ -147,23 +152,6 @@ Anything else falls back to a generic "Link" badge. To add a new type, extend `l
 ## 🎨 Theming
 
 Colours are semantic CSS variables defined in `src/index.css` under `:root` (light) and `.dark` (dark), then mapped onto Tailwind utilities via `@theme inline`. To rebrand, change the `--accent` values (and friends) in those two blocks — every component picks it up automatically. Fonts are set on `--font-sans` / `--font-mono` in the same file.
-
-## 🌐 Deployment
-
-The app is a static SPA — any static host works. Config for the two easiest free options is included.
-
-### Netlify
-
-1. Push this repo to GitHub.
-2. In Netlify → **Add new site → Import from Git**.
-3. Build command `npm run build`, publish directory `dist` (auto-detected from `netlify.toml`).
-
-### Vercel
-
-1. Push to GitHub.
-2. In Vercel → **New Project → Import**. The framework preset (Vite) and `vercel.json` are picked up automatically.
-
-Both configs include an SPA fallback so in-page anchor links always resolve.
 
 ---
 

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e17" />
+
+    <title>Pranav Jagtap — Full-Stack AI Engineer</title>
+    <meta
+      name="description"
+      content="Pranav Jagtap is a Full-Stack AI Engineer building scalable backend systems and GenAI applications with .NET Core, FastAPI, and LLMs."
+    />
+    <meta name="author" content="Pranav Jagtap" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pranav Jagtap — Full-Stack AI Engineer" />
+    <meta
+      property="og:description"
+      content="Building scalable backend systems and GenAI applications with .NET Core, FastAPI, and LLMs."
+    />
+    <meta property="og:image" content="/assets/profile.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Set theme before paint to avoid flash of wrong theme -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var theme = stored || (prefersDark ? "dark" : "light");
+          document.documentElement.classList.toggle("dark", theme === "dark");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

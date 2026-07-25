@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Languages",
+    "items": ["C#", "Python", "JavaScript", "SQL"]
+  },
+  {
+    "category": "Backend & Frameworks",
+    "items": [".NET Core (Web API & MVC)", "FastAPI", "Flask", "Entity Framework", "CrewAI", "LangChain"]
+  },
+  {
+    "category": "AI / GenAI",
+    "items": ["OpenAI & Gemini LLMs", "Fine-tuning", "Prompt Engineering", "RAG Pipelines", "pgvector", "Chroma", "LangSmith / Langfuse"]
+  },
+  {
+    "category": "Databases",
+    "items": ["PostgreSQL", "SQL Server", "MySQL", "Redis", "MongoDB", "Aerospike"]
+  },
+  {
+    "category": "Cloud & DevOps",
+    "items": ["Azure App Services", "Azure Key Vault", "App Insights", "Service Bus", "GitHub Actions", "Azure DevOps", "Docker", "Kafka"]
+  },
+  {
+    "category": "Frontend",
+    "items": ["React", "Next.js", "HTML", "CSS", "WXT", "Material UI"]
+  },
+  {
+    "category": "Integrations",
+    "items": ["Stripe", "Stytch", "Amazon SP-API", "Keepa", "MessageBird", "Hotjar"]
+  }
+]

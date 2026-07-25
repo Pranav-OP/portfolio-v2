@@ -1,0 +1,32 @@
+[
+  {
+    "label": "GitHub",
+    "handle": "Pranav-OP",
+    "url": "https://github.com/Pranav-OP",
+    "icon": "github"
+  },
+  {
+    "label": "LinkedIn",
+    "handle": "pranavj24",
+    "url": "https://www.linkedin.com/in/pranavj24/",
+    "icon": "linkedin"
+  },
+  {
+    "label": "Medium",
+    "handle": "@pranavjagtap7007",
+    "url": "https://medium.com/@pranavjagtap7007",
+    "icon": "medium"
+  },
+  {
+    "label": "X",
+    "handle": "PronubOP",
+    "url": "https://x.com/PronubOP",
+    "icon": "x"
+  },
+  {
+    "label": "Email",
+    "handle": "pranavjagtap7007@gmail.com",
+    "url": "mailto:pranavjagtap7007@gmail.com",
+    "icon": "mail"
+  }
+]

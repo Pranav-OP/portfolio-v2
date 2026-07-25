@@ -1,0 +1,51 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "company": "Avalpha Technologies",
+    "period": "Nov 2025 - Present",
+    "location": "Pune, India (Remote)",
+    "summary": "Architecting microservices backends and shipping AI-powered product features for Astro, a wholesale Amazon sourcing platform serving customers globally.",
+    "link": {
+      "label": "astroadvancedanalytics.com",
+      "url": "https://www.astroadvancedanalytics.com/"
+    },
+    "highlights": [
+      "Architected microservices-based backend systems, owning API design and service communication end-to-end; optimised 25+ legacy endpoints and built v2 APIs, cutting average response times by 50%.",
+      "Reduced database storage by 35% through PostgreSQL optimisation - indexing, query refactoring, data archival, and normalization.",
+      "Designed and shipped a wholesale Amazon product search service from POC to pay-as-you-go production; fine-tuned an OpenAI model and context prompts for accurate product matching via SP-API and Keepa.",
+      "Implemented multi-marketplace support (US, UK, Germany, Canada) with dynamic currency handling and a factory-pattern profit & tax calculation module per region.",
+      "Delivered a Stripe subscription system with monthly/yearly plans, feature-based access control, and webhook-driven payment workflow automation.",
+      "Built and maintained CI/CD pipelines via GitHub Actions & Azure DevOps; managed test & production on Azure (App Services, PostgreSQL, Key Vault, App Insights, Service Bus).",
+      "Mentored junior developers, ran code reviews, and collaborated directly with the CTO on architectural decisions."
+    ],
+    "stack": ["FastAPI", "Python", ".NET Core", "PostgreSQL", "OpenAI", "Stripe", "Stytch", "Azure", "React", "WXT"]
+  },
+  {
+    "role": "Software Engineer",
+    "company": "Prismatic Softwares Pvt. Ltd.",
+    "period": "Sept 2023 - Oct 2025",
+    "location": "Pune, India",
+    "summary": "Built industrial and enterprise software across manufacturing, healthcare, and construction domains - from PLC integrations to GenAI document pipelines.",
+    "highlights": [
+      "Developed a C# wrapper for PLC communication and console POCs for read/write with Allen-Bradley, Siemens & Mitsubishi controllers.",
+      "Optimised critical backend workflows, reducing processing latency of key functions (heartbeat & traceability) by up to 40%.",
+      "Implemented GenAI features: LLM integrations, multi-agent document processors, prompt orchestration, and RAG pipelines using pgvector and Chroma.",
+      "Designed the database schema for a predictive-analysis module and built autonomous production-planning and data-transfer modules.",
+      "Developed REST APIs with JWT authentication and audit logging; applied Repository & Dependency Injection patterns in an N-tier architecture.",
+      "Containerised applications with Docker and contributed to event-driven CDC workflows using Kafka."
+    ],
+    "stack": [".NET Core", "C#", "PostgreSQL", "SQL Server", "pgvector", "Chroma", "Docker", "Kafka"]
+  },
+  {
+    "role": "Intern Software Engineer",
+    "company": "Prismatic Softwares Pvt. Ltd.",
+    "period": "Feb 2023 - Aug 2023",
+    "location": "Pune, India",
+    "summary": "Automated frontend generation with computer vision and built file-processing services in Python.",
+    "highlights": [
+      "Created Python scripts converting Figma image mockups to HTML/CSS using OCR and image processing, increasing automation efficiency by 60%.",
+      "Built REST APIs for file processing and CRUD on MySQL, handling TXT, CSV, Word, and PDF files in Python."
+    ],
+    "stack": ["Python", "Flask", "OpenCV", "Pytesseract", "SQLAlchemy", "MySQL"]
+  }
+]

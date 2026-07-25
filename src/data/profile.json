@@ -1,0 +1,24 @@
+{
+  "name": "Pranav Jagtap",
+  "firstName": "Pranav",
+  "role": "Full-Stack AI Engineer",
+  "tagline": "I build scalable backend systems and GenAI applications.",
+  "location": "Pune, Maharashtra, India",
+  "email": "pranavjagtap7007@gmail.com",
+  "phone": "+91 9766537007",
+  "availability": "Open to interesting problems in distributed systems, databases & AI.",
+  "resumeUrl": "/Pranav_Jagtap_Resume.pdf",
+  "cvUrl": "/Pranav_Jagtap_CV.pdf",
+  "photo": "/assets/profile.png",
+  "intro": [
+    "I'm a Full-Stack AI Engineer with 2.5+ years of experience delivering scalable backend systems and GenAI applications using .NET Core, FastAPI, and LLM integrations. I've owned features end-to-end, from prototype to production, across microservices architecture and multi-region platform design.",
+    "Currently at Avalpha Technologies, I architect monolith & microservices-based backends, ship AI-powered product features, and collaborate directly with the CTO on architectural decisions at a startup scale. Before that, I spent two years at Prismatic Softwares building industrial software across manufacturing, healthcare, and construction domains.",
+    "I care about process optimization, clean architecture, and squeezing performance out of the systems I build. When I'm not shipping, I'm usually exploring something new, which is exactly what The Lab below keeps track of."
+  ],
+  "highlights": [
+    { "label": "Years of experience", "value": "2.5+" },
+    { "label": "Response time cut", "value": "50%" },
+    { "label": "DB storage reduced", "value": "35%" },
+    { "label": "Marketplaces shipped", "value": "4" }
+  ]
+}

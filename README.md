@@ -7,13 +7,14 @@ Design language: deep, calm surfaces with a single teal accent, a mouse-follow s
 ## ✨ Features
 
 - **Data-driven** — every section reads from a JSON file in `src/data/`. Update content without touching components.
-- **The Lab** — a monthly log of what you're exploring (papers, talks, blog posts, tools). Add one JSON entry per month to track your growth over time. _(This is the headline feature — see [Updating "The Lab"](#-updating-the-lab-monthly).)_
+- **The Lab** — a monthly log of what you're into (videos, case studies, essays, podcasts). Add one JSON entry per month to track your growth over time. _(This is the headline feature — see [Updating "The Lab"](#-updating-the-lab-monthly).)_
 - **Light / dark mode** — toggle with persisted preference, respects the OS setting on first visit, and paints the correct theme before first render (no flash).
 - **Fully responsive** — fixed sidebar layout on desktop, single-column with a full-screen menu on mobile.
 - **Minimal, interactive animations** — scroll-reveal, staggered lists, active-section nav highlighting, hover lifts, mouse spotlight. All respect `prefers-reduced-motion`.
 - **Accessible** — semantic landmarks, skip link, focus-visible rings, ARIA labels, keyboard-friendly.
 - **SEO / social ready** — title, description, Open Graph, and Twitter card meta tags.
 - **"Go back in time" portal** — a rotating spaceship badge (fixed bottom-right on desktop; revealed at the foot of the page on mobile) opens a full-screen animated "Portal to Tomorrow" that links to previous versions of the site. Driven by `previousSites` in `profile.json`.
+- **Live experience easter egg** — the "Years of experience" stat card carries a subtle breathing glow; hover it (desktop) or tap it (mobile) and the value morphs into a live count-up — years, months, days, hours, minutes, seconds — since `experienceStart` in `profile.json`. The 1-second timer runs only while active, so it's idle otherwise.
 
 ## 🛠 Tech Stack
 
@@ -95,6 +96,7 @@ portfolio_react_2/
 │       │   ├── SectionHeading.jsx  # numbered section titles
 │       │   ├── ThemeToggle.jsx     # animated sun/moon button
 │       │   ├── Greeting.jsx        # rotating multilingual greeting
+│       │   ├── ExperienceStat.jsx  # ⭐ hover/tap live experience count-up (easter egg)
 │       │   └── TimeMachine.jsx     # ⭐ rocket badge + "Portal to Tomorrow" overlay
 │       └── sections/
 │           ├── About.jsx
@@ -123,6 +125,7 @@ All content is in `src/data/*.json`. No component edits needed for routine updat
 - **Social links** → `socials.json`
 - **Header greetings** → `greetings.json` (rotates through the list)
 - **Previous site versions** (the "go back in time" portal) → `previousSites` in `profile.json`. Each entry: `{ label, host, url, year, thumbnail }`; add thumbnails to `public/assets/`.
+- **Live experience counter** → set `experienceStart` (an ISO date, e.g. `"2023-02-01T00:00:00"`) in `profile.json`; the stat with `"live": true` in `highlights` powers the hover/tap count-up.
 
 To swap the résumé/CV, replace the PDFs in `public/` (keep the filenames, or update the paths in `profile.json`).
 

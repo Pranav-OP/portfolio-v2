@@ -149,11 +149,28 @@
   .group:hover .animate-orbit {
     animation-duration: 5s;
   }
+
+  /* Subtle breathing glow — a minimal discoverability cue on interactive cards */
+  .animate-pulse-glow {
+    animation: pulse-glow 3.6s ease-in-out infinite;
+  }
 }
 
 @keyframes orbit {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    border-color: var(--line);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  50% {
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+    box-shadow: 0 0 14px -4px var(--accent-glow);
   }
 }
 

@@ -24,8 +24,9 @@
     "Currently at Avalpha Technologies, I architect monolith & microservices-based backends, ship AI-powered product features, and collaborate directly with the CTO on architectural decisions at a startup scale. Before that, I spent two years at Prismatic Softwares building industrial software across manufacturing, healthcare, and construction domains.",
     "I care about process optimization, clean architecture, and squeezing performance out of the systems I build. When I'm not shipping, I'm usually exploring something new, which is exactly what The Lab below keeps track of."
   ],
+  "experienceStart": "2023-02-01T00:00:00",
   "highlights": [
-    { "label": "Years of experience", "value": "3+" },
+    { "label": "Years of experience", "value": "3+", "live": true },
     { "label": "Response time cut", "value": "50%" },
     { "label": "DB storage reduced", "value": "35%" },
     { "label": "Marketplaces shipped", "value": "4" }

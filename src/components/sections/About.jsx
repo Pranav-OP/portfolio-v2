@@ -3,6 +3,7 @@ import { FiDownload, FiFileText, FiArrowUpRight } from "react-icons/fi";
 import profile from "../../data/profile.json";
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
+import ExperienceStat from "../ui/ExperienceStat";
 import { stagger, fadeUp, viewportOnce } from "../../lib/motion";
 
 export default function About() {
@@ -26,17 +27,26 @@ export default function About() {
         viewport={viewportOnce}
         className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4"
       >
-        {profile.highlights.map((h) => (
-          <motion.div
-            key={h.label}
-            variants={fadeUp}
-            className="rounded-xl border border-line bg-surface/50 p-4 backdrop-blur transition-colors hover:border-accent/60"
-          >
-            <dt className="sr-only">{h.label}</dt>
-            <dd className="font-mono text-2xl font-bold text-gradient">{h.value}</dd>
-            <p className="mt-1 text-xs leading-snug text-muted">{h.label}</p>
-          </motion.div>
-        ))}
+        {profile.highlights.map((h) =>
+          h.live ? (
+            <ExperienceStat
+              key={h.label}
+              start={profile.experienceStart}
+              value={h.value}
+              label={h.label}
+            />
+          ) : (
+            <motion.div
+              key={h.label}
+              variants={fadeUp}
+              className="rounded-xl border border-line bg-surface/50 p-4 backdrop-blur transition-colors hover:border-accent/60"
+            >
+              <dt className="sr-only">{h.label}</dt>
+              <dd className="font-mono text-2xl font-bold text-gradient">{h.value}</dd>
+              <p className="mt-1 text-xs leading-snug text-muted">{h.label}</p>
+            </motion.div>
+          )
+        )}
       </motion.dl>
 
       <Reveal className="mt-10 flex flex-wrap gap-4">

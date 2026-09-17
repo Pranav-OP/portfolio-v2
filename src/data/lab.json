@@ -42,10 +42,10 @@
         "description": "The CRED founder on leverage when 90% of a startup's code is AI-written. A useful gut-check on where a developer's value actually moves next."
       },
       {
-        "title": "Watchfinder & Co — watchmaking teardowns",
+        "title": "Why the Grand Seiko Spring Drive Is the Greatest Watch Movement",
         "type": "youtube",
-        "url": "https://www.youtube.com/@WatchfinderandCo",
-        "description": "Off the clock: I fall down analog-watch rabbit holes. There's something grounding about mechanical movements - a few hundred hand-finished parts keeping time with zero electricity."
+        "url": "https://www.youtube.com/watch?v=jVoRoK1u3Dg",
+        "description": "Off the clock: I fall down analog-watch rabbit holes. The Spring Drive's glide-motion seconds hand is peak engineering - a few hundred hand-finished parts keeping near-perfect time with zero electronics."
       }
     ]
   },
@@ -61,10 +61,16 @@
         "description": "A Think School deep-dive on Palantir - how a data-analytics company became critical infrastructure for the state. Equal parts product, politics and power."
       },
       {
-        "title": "Fireship",
+        "title": "Fireship: Anthropic leaks Claude's source code",
         "type": "youtube",
-        "url": "https://www.youtube.com/@Fireship",
-        "description": "My 100-second pulse on the tech news cycle - new frameworks, model drops and the occasional roast. The fastest way I stay current between real projects."
+        "url": "https://www.youtube.com/watch?v=mBHRPeg8zPU",
+        "description": "Fireship is my 100-second pulse on the tech news cycle - new frameworks, model drops and the occasional roast. This take on an Anthropic slip-up is the format at its best."
+      },
+      {
+        "title": "Theo (t3.gg): Did GPT-6 Break Out During Testing?",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=32iH1WBJbJo",
+        "description": "Theo Browne's opinionated, in-the-weeds takes on AI tooling, web dev and the SDE news cycle. A good counterweight to the hype - I keep him in regular rotation."
       },
       {
         "title": "Use The Index, Luke!",
@@ -80,9 +86,9 @@
     "note": "Range: startups, culture and where value is heading.",
     "entries": [
       {
-        "title": "Y Combinator",
+        "title": "Y Combinator: Why 80% of Apps Will Disappear — OpenClaw Creator",
         "type": "youtube",
-        "url": "https://www.youtube.com/@ycombinator",
+        "url": "https://www.youtube.com/watch?v=4uzGDAoNOZc",
         "description": "Founder talks and startup teardowns I keep in rotation. Even from the engineering seat, thinking like a builder-of-the-business changes the calls I make on architecture and scope."
       },
       {
@@ -92,10 +98,10 @@
         "description": "A Ketan Puri Marathi podcast on Shivaji Maharaj and the Maratha empire. Homegrown history, and quietly a masterclass in leadership, delegation and playing the long game."
       },
       {
-        "title": "This Past Weekend w/ Theo Von",
+        "title": "Neuroscientist's Guide to 10x Your Focus & Memory — ft. Dr Sahar Yousef",
         "type": "podcast",
-        "url": "https://www.youtube.com/@TheoVon",
-        "description": "My long-form, wind-down listen. Wide-ranging conversations that pull me out of the dev bubble and remind me the most interesting people rarely share my domain."
+        "url": "https://www.youtube.com/watch?v=4Vz6L8B73i4",
+        "description": "From Raj Shamani's Figuring Out - a neuroscientist on evidence-based focus and memory. The kind of long-form podcast I lean on to sharpen how I work, lead and mentor, not just what I build."
       }
     ]
   }

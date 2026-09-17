@@ -14,7 +14,7 @@ Design language: deep, calm surfaces with a single teal accent, a mouse-follow s
 - **Accessible** — semantic landmarks, skip link, focus-visible rings, ARIA labels, keyboard-friendly.
 - **SEO / social ready** — title, description, Open Graph, and Twitter card meta tags.
 - **"Go back in time" portal** — a rotating spaceship badge (fixed bottom-right on desktop; revealed at the foot of the page on mobile) opens a full-screen animated "Portal to Tomorrow" that links to previous versions of the site. Driven by `previousSites` in `profile.json`.
-- **Live experience easter egg** — the "Years of experience" stat card carries a subtle breathing glow; hover it (desktop) or tap it (mobile) and the value morphs into a live count-up — years, months, days, hours, minutes, seconds — since `experienceStart` in `profile.json`. The 1-second timer runs only while active, so it's idle otherwise.
+- **Live experience easter egg** — the "Years of experience" stat card carries a subtle breathing glow; hover it (desktop) or tap it (mobile) and the value morphs into a live count-up — years, months, days, hours, minutes, seconds — since `experienceStart` in `profile.json`. The 1-second timer runs only while active, so it's idle otherwise. On mobile you tap anywhere outside to close; if it's left open ~30s a playful nudge fades in, and closing pops a quick thumbs-up "thanks" — so the timer never lingers.
 
 ## 🛠 Tech Stack
 

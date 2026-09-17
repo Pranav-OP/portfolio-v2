@@ -4,17 +4,24 @@
     "company": "Avalpha Technologies",
     "period": "Nov 2025 - Present",
     "location": "Pune, India (Remote)",
-    "summary": "Architecting microservices backends and shipping AI-powered product features for Astro, a wholesale Amazon sourcing platform serving customers globally.",
-    "link": {
-      "label": "astroadvancedanalytics.com",
-      "url": "https://www.astroadvancedanalytics.com/"
-    },
+    "summary": "Architecting monolith/microservices backends and shipping AI-powered product features for Astro, a wholesale Amazon sourcing platform serving customers globally.",
+    "links": [
+      {
+        "label": "astroadvancedanalytics.com",
+        "url": "https://www.astroadvancedanalytics.com/"
+      },
+      {
+        "label": "premiumqualityforyou.com",
+        "url": "https://www.premiumqualityforyou.com/"
+      }
+    ],
     "highlights": [
       "Architected microservices-based backend systems, owning API design and service communication end-to-end; optimised 25+ legacy endpoints and built v2 APIs, cutting average response times by 50%.",
       "Reduced database storage by 35% through PostgreSQL optimisation - indexing, query refactoring, data archival, and normalization.",
       "Designed and shipped a wholesale Amazon product search service from POC to pay-as-you-go production; fine-tuned an OpenAI model and context prompts for accurate product matching via SP-API and Keepa.",
       "Implemented multi-marketplace support (US, UK, Germany, Canada) with dynamic currency handling and a factory-pattern profit & tax calculation module per region.",
-      "Delivered a Stripe subscription system with monthly/yearly plans, feature-based access control, and webhook-driven payment workflow automation.",
+      "Implemented Stripe-based subscription billing end-to-end: monthly/yearly plans, feature-gated access control, webhook-driven lifecycle handling (upgrades, cancellations, failed payments) with idempotency & a reconciliation job as a safety net for missed webhook events.",
+      "Performed end-to-end custom domain and DNS configuration on GoDaddy for two production sites: A/CNAME record setup for Azure Static Web Apps, migrating domain DNS hosting from SiteGround to GoDaddy while keeping the live WordPress site online during transition, then cut over to the new stack once validated.",
       "Built and maintained CI/CD pipelines via GitHub Actions & Azure DevOps; managed test & production on Azure (App Services, PostgreSQL, Key Vault, App Insights, Service Bus).",
       "Mentored junior developers, ran code reviews, and collaborated directly with the CTO on architectural decisions."
     ],

@@ -17,17 +17,22 @@ function Card({ job }) {
         <p className="mt-0.5 text-xs text-muted">{job.location}</p>
         <p className="mt-3 text-sm leading-relaxed text-muted">{job.summary}</p>
 
-        {job.link && (
-          <a
-            href={job.link.url}
-            target="_blank"
-            rel="noreferrer"
-            className="group/link mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-accent-fg transition-colors hover:underline"
-          >
-            <FiGlobe size={15} />
-            {job.link.label}
-            <FiArrowUpRight className="transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
-          </a>
+        {job.links?.length > 0 && (
+          <div className="mt-3 flex flex-wrap gap-x-5 gap-y-1.5">
+            {job.links.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                className="group/link inline-flex items-center gap-1.5 text-sm font-medium text-accent-fg transition-colors hover:underline"
+              >
+                <FiGlobe size={15} />
+                {link.label}
+                <FiArrowUpRight className="transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+              </a>
+            ))}
+          </div>
         )}
 
         <ul className="mt-3 space-y-2">

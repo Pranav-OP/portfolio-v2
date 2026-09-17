@@ -51,6 +51,9 @@ Requires Node 18+ (developed on Node 24).
 
 ```
 portfolio_react_2/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # CI: lint + build on PRs, deploy to Netlify on push to main
 ├── public/                     # served as-is at the site root
 │   ├── favicon.svg             # PJ monogram
 │   ├── Pranav_Jagtap_Resume.pdf   # one-page résumé (Download Résumé button)
@@ -114,7 +117,7 @@ portfolio_react_2/
 All content is in `src/data/*.json`. No component edits needed for routine updates.
 
 - **Intro, stats, résumé/CV** → `profile.json`
-- **Jobs** → `experience.json` (newest first). Add an optional `link: { label, url }` to a role to show a live-product link under its summary.
+- **Jobs** → `experience.json` (newest first). Add an optional `links: [{ label, url }]` array to a role to show one or more live-product links under its summary.
 - **Projects** → `projects.json` (set `"image": ""` to fall back to an icon tile; put images in `public/assets/`)
 - **Skills** → `skills.json` (grouped by `category`)
 - **Social links** → `socials.json`
@@ -152,6 +155,28 @@ Anything else falls back to a generic "Link" badge. To add a new type, extend `l
 ## 🎨 Theming
 
 Colours are semantic CSS variables defined in `src/index.css` under `:root` (light) and `.dark` (dark), then mapped onto Tailwind utilities via `@theme inline`. To rebrand, change the `--accent` values (and friends) in those two blocks — every component picks it up automatically. Fonts are set on `--font-sans` / `--font-mono` in the same file.
+
+## 🚀 Continuous Deployment
+
+The site is hosted on **Netlify** and deployed via GitHub Actions (`.github/workflows/deploy.yml`):
+
+- **On a pull request to `main`** → runs `npm ci` → `npm run lint` → `npm run build`. A failure shows a red check on the PR, acting as a merge gate. It does **not** deploy.
+- **On a push / merged PR to `main`** → runs the same checks, then deploys the freshly built `dist/` to the production Netlify site.
+
+`dist/` is git-ignored and rebuilt fresh on every run, so nothing stale is ever published.
+
+### First-time setup
+
+1. **Create a Netlify auth token** — Netlify → avatar → **User settings → Applications → Personal access tokens → New access token**. Copy it.
+2. **Find the Site ID** — Netlify → your site → **Site configuration → General → Site details → Site ID**.
+3. **Add both as GitHub repository secrets** — repo → **Settings → Secrets and variables → Actions → New repository secret**:
+   - `NETLIFY_AUTH_TOKEN` = the token from step 1
+   - `NETLIFY_SITE_ID` = the ID from step 2
+4. **Disable Netlify's built-in auto-build** (so Actions is the single deployer and you don't get double deploys) — Netlify → your site → **Site configuration → Build & deploy → Continuous deployment → Stop builds**.
+
+> If you'd rather let Netlify's native Git integration handle deploys, skip steps 3–4 and treat the workflow as a lint/build check only (remove the "Deploy to Netlify" step).
+
+CI uses **Node 20 (LTS)**; the app builds on Node 18+.
 
 ---
 

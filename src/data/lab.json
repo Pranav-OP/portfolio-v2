@@ -1,45 +1,101 @@
 [
   {
-    "month": "2026-07",
-    "title": "July 2026",
-    "note": "Going deep on vector search internals and agentic workflows.",
+    "month": "2026-09",
+    "title": "September 2026",
+    "note": "Directing agents instead of just writing code.",
     "entries": [
       {
-        "title": "Building effective agents",
-        "type": "blog",
-        "url": "https://www.anthropic.com/research/building-effective-agents",
-        "description": "Revisiting patterns for composing reliable multi-step agents vs. single-call prompting - mapping it onto the CrewAI work I've been doing."
-      },
-      {
-        "title": "HNSW: Efficient and robust ANN search",
-        "type": "paper",
-        "url": "https://arxiv.org/abs/1603.09320",
-        "description": "The algorithm behind pgvector's HNSW index. Reading it to tune recall/latency trade-offs on the product-search service."
-      },
-      {
-        "title": "System Design: Rate limiting",
+        "title": "An L8 Principal's Agentic Engineering Workflow",
         "type": "youtube",
-        "url": "https://www.youtube.com/results?search_query=rate+limiting+system+design",
-        "description": "Comparing token-bucket vs. sliding-window approaches for the subscription API's per-plan limits."
+        "url": "https://www.youtube.com/watch?v=iQyg-KypKAA",
+        "description": "Kun Chen (ex-Meta L8) ships 40+ well-tested PRs a week by directing a fleet of agents like an engineering manager. As the senior-most dev on my project, this reframed how I think about scaling myself instead of my keystrokes."
+      },
+      {
+        "title": "Forget Everything You Know About Writing Code in 2026",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5_lUue8lNzI",
+        "description": "A reality-check on how the day-to-day of engineering is shifting from typing code to specifying, orchestrating and reviewing it. Lines up with what I'm already feeling on our own stack."
+      },
+      {
+        "title": "Building Effective Agents",
+        "type": "blog",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents",
+        "description": "Anthropic's breakdown of when to reach for workflows vs. agents, and the composable patterns behind each. My reference point for the CrewAI / multi-agent work at Astro."
+      }
+    ]
+  },
+  {
+    "month": "2026-08",
+    "title": "August 2026",
+    "note": "The business and systems behind the tech.",
+    "entries": [
+      {
+        "title": "How America's 4,488 Banks Work",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Jz5L3X453Jw",
+        "description": "A PolyMatter case study on why the US still runs thousands of tiny banks. I keep coming back to these systems-thinking breakdowns - they're the closest thing to a design review for the real world."
+      },
+      {
+        "title": "How to 10x Your Value in the A.I. Era — ft. Kunal Shah",
+        "type": "podcast",
+        "url": "https://www.youtube.com/watch?v=L1Npx-fBing",
+        "description": "The CRED founder on leverage when 90% of a startup's code is AI-written. A useful gut-check on where a developer's value actually moves next."
+      },
+      {
+        "title": "Watchfinder & Co — watchmaking teardowns",
+        "type": "youtube",
+        "url": "https://www.youtube.com/@WatchfinderandCo",
+        "description": "Off the clock: I fall down analog-watch rabbit holes. There's something grounding about mechanical movements - a few hundred hand-finished parts keeping time with zero electricity."
+      }
+    ]
+  },
+  {
+    "month": "2026-07",
+    "title": "July 2026",
+    "note": "Keeping a finger on the tech news cycle.",
+    "entries": [
+      {
+        "title": "CIA's Secret: How Peter Thiel Built a $200B Weapon",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ut5s4rImEhI",
+        "description": "A Think School deep-dive on Palantir - how a data-analytics company became critical infrastructure for the state. Equal parts product, politics and power."
+      },
+      {
+        "title": "Fireship",
+        "type": "youtube",
+        "url": "https://www.youtube.com/@Fireship",
+        "description": "My 100-second pulse on the tech news cycle - new frameworks, model drops and the occasional roast. The fastest way I stay current between real projects."
+      },
+      {
+        "title": "Use The Index, Luke!",
+        "type": "blog",
+        "url": "https://use-the-index-luke.com/",
+        "description": "A developer's ground-up guide to how SQL indexing really works. This mental model directly fed the 35% storage and query-time wins I made on our PostgreSQL layer."
       }
     ]
   },
   {
     "month": "2026-06",
     "title": "June 2026",
-    "note": "Sharpening Postgres performance intuition.",
+    "note": "Range: startups, culture and where value is heading.",
     "entries": [
       {
-        "title": "Use the index, Luke",
-        "type": "blog",
-        "url": "https://use-the-index-luke.com/",
-        "description": "A ground-up guide to SQL indexing. Directly fed the 35% storage + query-time wins I made this quarter."
+        "title": "Y Combinator",
+        "type": "youtube",
+        "url": "https://www.youtube.com/@ycombinator",
+        "description": "Founder talks and startup teardowns I keep in rotation. Even from the engineering seat, thinking like a builder-of-the-business changes the calls I make on architecture and scope."
       },
       {
-        "title": "IEEE: A survey on RAG for LLMs",
-        "type": "ieee",
-        "url": "https://ieeexplore.ieee.org/",
-        "description": "Structured overview of retrieval strategies, chunking, and evaluation - useful checklist for auditing our RAG pipeline."
+        "title": "छत्रपती शिवाजी महाराज आणि मराठा साम्राज्य",
+        "type": "podcast",
+        "url": "https://www.youtube.com/watch?v=GeIv74gYk5k",
+        "description": "A Ketan Puri Marathi podcast on Shivaji Maharaj and the Maratha empire. Homegrown history, and quietly a masterclass in leadership, delegation and playing the long game."
+      },
+      {
+        "title": "This Past Weekend w/ Theo Von",
+        "type": "podcast",
+        "url": "https://www.youtube.com/@TheoVon",
+        "description": "My long-form, wind-down listen. Wide-ranging conversations that pull me out of the dev bubble and remind me the most interesting people rarely share my domain."
       }
     ]
   }

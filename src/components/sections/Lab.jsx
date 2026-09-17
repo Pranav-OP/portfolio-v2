@@ -79,8 +79,8 @@ export default function Lab() {
     <section id="lab" className="scroll-mt-24 pt-20 lg:pt-24">
       <SectionHeading index={4} title="The Lab" />
       <Reveal as="p" className="-mt-2 mb-10 max-w-xl leading-relaxed text-muted">
-        A monthly log of what I'm exploring - papers, talks, blog posts, and
-        tools that caught my attention. A running record of the rabbit holes
+        A monthly log of what I'm into - the videos, case studies, essays and
+        podcasts that caught my attention. A running record of the rabbit holes
         that shape how I think and build.
       </Reveal>
 
